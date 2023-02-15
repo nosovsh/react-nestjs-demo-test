@@ -1,22 +1,24 @@
 # Test project
 
-Just a small fullstack demo application build with Nestjs and React. Backend was built in couple of days, frontend in couple of hours.
+This is a small full-stack demo application built with NestJS and React. The backend was built in a couple of days, while the frontend only took a couple of hours to create.
 
-User can:  
-- list orders
-- see order change history
-- create new dummy order
-- add manager to the order
-- change status of the order (Open -> InProgress -> Complete)
+Users can:
 
-App includes:
-- few backend NestJS modules
-- GraphQL server
-- some validation
-- few frontend screens
-- frontend types are generated from graphql schema
-- docker container with MongoDB
-- basic configuration for backend and frontend
+- List orders
+- View order change history
+- Create a new dummy order
+- Add a manager to an order
+- Change the status of an order (Open -> InProgress -> Complete)
+
+The application includes:
+
+- A few NestJS modules for the backend
+- A GraphQL server
+- Some validation
+- A few frontend screens
+- Frontend types generated from GraphQL schema
+- A Docker container with MongoDB
+- Basic configuration for backend and frontend
 
 # Installation
 
@@ -50,7 +52,7 @@ yarn install
 yarn start
 ```
 
-to start codegen for generating graphql typings:
+To generate GraphQL typings, run:
 
 ```
 cd react-nestjs-demo-test-fe

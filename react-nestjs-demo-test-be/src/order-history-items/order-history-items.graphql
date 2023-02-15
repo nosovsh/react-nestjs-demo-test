@@ -1,0 +1,30 @@
+type OrderHistoryItem {
+  _id: String!
+  createdAt: String!
+  status: String!
+  orderId: String!
+}
+
+input CreateOrderHistoryItemInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateOrderHistoryItemInput {
+  _id: Int!
+}
+
+type Query {
+  orderHistoryItems: [OrderHistoryItem]!
+  orderHistoryItem(id: Int!): OrderHistoryItem
+}
+
+type Mutation {
+  createOrderHistoryItem(
+    createOrderHistoryItemInput: CreateOrderHistoryItemInput!
+  ): OrderHistoryItem!
+  updateOrderHistoryItem(
+    updateOrderHistoryItemInput: UpdateOrderHistoryItemInput!
+  ): OrderHistoryItem!
+  removeOrderHistoryItem(id: Int!): OrderHistoryItem
+}

@@ -1,0 +1,35 @@
+enum OrderStatus {
+  OPEN
+  IN_PROGRESS
+  COMPLETE
+}
+
+type Order {
+  _id: String!
+  status: OrderStatus!
+  createdAt: String!
+  updatedAt: String!
+  orderHistoryItems: [OrderHistoryItem!]!
+  managerId: String
+}
+
+input CreateOrderInput {
+  managerId: String
+}
+
+input UpdateOrderInput {
+  _id: String!
+  status: OrderStatus
+  managerId: String
+}
+
+type Query {
+  orders: [Order!]!
+  order(id: String!): Order!
+}
+
+type Mutation {
+  createOrder(createOrderInput: CreateOrderInput!): Order!
+  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
+  removeOrder(id: String!): Order
+}

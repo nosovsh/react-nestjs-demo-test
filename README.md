@@ -1,6 +1,22 @@
 # Test project
 
-Build with Nestjs and React
+Just a small fullstack demo application build with Nestjs and React. Backend was built in couple of days, frontend in couple of hours.
+
+User can:  
+- list orders
+- see order change history
+- create new dummy order
+- add manager to the order
+- change status of the order (Open -> InProgress -> Complete)
+
+App includes:
+- few backend NestJS modules
+- GraphQL server
+- some validation
+- few frontend screens
+- frontend types are generated from graphql schema
+- docker container with MongoDB
+- basic configuration for backend and frontend
 
 # Installation
 
